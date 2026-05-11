@@ -4,57 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Sobre el curso</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a class="is-active" href="./about.html">Sobre el curso</a>
-          <a href="./faq.html">FAQ</a>
-          <a href="./privacy.html">Privacidad</a>
-        </nav>
-      </div>
-    </header>
+  <body class="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
+  <header class="bg-slate-900 text-white">
+    <div class="w-[92%] max-w-[1100px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-5">
+      <a class="text-2xl font-bold tracking-tight" href="../index.html">Tailwind Labs</a>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Sobre esta practica</h1>
-          <p>
+      <nav id="menu-principal" class="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm font-medium">
+        <a class="hover:text-cyan-300 transition" href="../index.html">Inicio</a>
+        <a class="text-cyan-300" href="./about.html">Sobre el curso</a>
+        <a class="hover:text-cyan-300 transition" href="./faq.html">FAQ</a>
+        <a class="hover:text-cyan-300 transition" href="./privacy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="w-[92%] max-w-[1100px] mx-auto py-16">
+      <div class="bg-cyan-50 border border-cyan-100 p-8 rounded-xl mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Sobre esta practica
+        </h1>
+        <p class="text-slate-600 max-w-3xl">
           Esta pagina entrena composicion con bloques, tipografia y grillas responsive.
           Deberias reutilizar patrones visuales del home para mantener consistencia.
-          </p>
-        </div>
-
-        <div id="stats-grid" class="stats-grid">
-          <article class="stat-card">
-            <p class="stat-label">Duracion sugerida</p>
-            <p class="stat-value">90 min</p>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Paginas a trabajar</p>
-            <p class="stat-value">4</p>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Utilidades esperadas</p>
-            <p class="stat-value">20+</p>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Resultado</p>
-            <p class="stat-value">Deploy listo</p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
-        <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        </p>
       </div>
-    </footer>
-  </body>
+
+      <div id="stats-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="bg-white p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-lg transition">
+          <p class="text-sm font-semibold uppercase tracking-wide text-cyan-600 mb-2">Duracion sugerida</p>
+          <p class="text-3xl font-bold text-slate-900">90 min</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-lg transition">
+          <p class="text-sm font-semibold uppercase tracking-wide text-cyan-600 mb-2">Paginas a trabajar</p>
+          <p class="text-3xl font-bold text-slate-900">4</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-lg transition">
+          <p class="text-sm font-semibold uppercase tracking-wide text-cyan-600 mb-2">Utilidades esperadas</p>
+          <p class="text-3xl font-bold text-slate-900">20+</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-lg transition">
+          <p class="text-sm font-semibold uppercase tracking-wide text-cyan-600 mb-2">Resultado</p>
+          <p class="text-3xl font-bold text-slate-900">Deploy listo</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-300 py-6">
+    <div class="w-[92%] max-w-[1100px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm">
+      <p>Programacion II - Ejercitacion Tailwind CSS</p>
+      <p>Desarrollado por Marcos Farid Garnica</p>
+    </div>
+  </footer>
+ </body>
 </html>
